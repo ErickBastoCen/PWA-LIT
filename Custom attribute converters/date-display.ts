@@ -1,9 +1,10 @@
-import {LitElement, html, PropertyValues} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import {dateConverter} from './date-converter.js';
 
 @customElement('date-display')
 export class DateDisplay extends LitElement {
-  @property({attribute: false})
+  @property({converter: dateConverter})
   date = new Date();
 
   render() {
