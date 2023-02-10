@@ -4,7 +4,7 @@ import {customElement, property} from 'lit/decorators.js';
 @customElement('my-element')
 export class MyElement extends LitElement {
   @property()
-  version = 'STARTING';
+  version = 'COMPLETED';
 
   render() {
     return html`
@@ -13,3 +13,4 @@ export class MyElement extends LitElement {
     `;
   }
 }
+
